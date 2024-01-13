@@ -1,0 +1,36 @@
+.Btn,.Btn1 {
+    border-radius: 10px;
+    background-color: rgb(202, 216, 200);
+    border-color: rgb(202, 216, 200);
+    color: rgb(33, 79, 24);
+
+  }
+  
+._active, .Btn:hover,._active1, .Btn1:hover {
+    border-radius: 0px 10px 0px 10px;
+    background-color: rgb(118, 163, 110);
+    border-color: rgb(118, 163, 110);
+    color: rgb(255, 255, 255);
+
+  }
+
+.Skills{
+  background-color: rgb(236, 253, 236);
+   box-shadow: 20px 20px 5px rgb(188, 208, 188);
+   border-radius: 10px; 
+}
+.SkillBox{
+  background-color:rgb(222, 222, 233);
+  border-radius: 10px;
+  box-shadow: 20px 20px 5px rgb(146, 195, 203);
+  border-radius: 10px;
+}
+
+.SkillBoxInside,.SkillBoxInside1,.Projs{
+  display: inline-block; 
+  border-color: black; 
+  background-color:  rgb(216, 220, 184);
+  border-radius: 5px;
+  padding: 2px;
+  box-shadow: 5px 5px 5px 1px rgb(118, 157, 163);
+}

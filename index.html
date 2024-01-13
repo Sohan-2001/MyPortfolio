@@ -1,0 +1,743 @@
+<!doctype html>
+<html lang="en">
+  <head>  
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+<link rel="stylesheet" href="index.css">
+
+<link href='https://fonts.googleapis.com/css?family=Kaushan Script' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+     .row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+      [class*="col-"] {
+        float: left;
+        padding: 10px;
+      }
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 45%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+@media only screen and (max-width: 900px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+    
+  }
+}
+
+
+    </style>
+
+     </head>
+    <title>Sohan Karfa</title>
+    
+ 
+  <body style="overflow-x: hidden; margin-left: 0px; margin-right: 0px; position: relative;">
+    <div id="loader" style="width: 100vw; height: 100vh; display: flex; justify-content: center; align-items: center;"><img src="https://tamilnaducouncil.ac.in/wp-content/uploads/2018/10/loading-gif.gif"></div>
+    
+    <div class="loaded">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary" data-bs-theme="dark">
+  <div class="container-fluid" >
+    <a class="navbar-brand" >@</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" class="btn" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" class="btn" href="#Edu">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" class="btn" href="#Ski">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  class="btn" href="#Pro">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" class="btn" href="#Con">Contacts</a>
+        </li>
+      </div>
+      
+    </div>
+  </div>
+</nav>
+
+
+<div class="row">
+    <div class="col-3">
+      <img src="image.png" 
+      style="height: calc(85vh); " >
+    </div>
+    <div class="col-3">
+      <div id="typing" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:calc(20px + 3vw); position: relative; top:3vw; text-align: center;"></div>
+      <div style="display: inline-block; position: relative; top: 6vw; text-align: center;  color: rgb(73, 123, 124); font-weight: 1px; font-size:calc(12px+1.5vw); font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; ">
+        <a >"<p id="Time"; style="display: inline-block;"></p><br>I am Sohan Karfa. I am from Tarakeswar, Hooghly, West Bengal, India, Asia, Earth, Milky Way, Cosmos. 
+          I believe in works rather than words. I have few hobbies like writing diary, photography, chess. I am a bad leader as I don't trust others for my
+           task completion, but I am a good team member as I complete my own task quickly.
+          "</a>
+      </div> 
+      <div style="position: relative; margin-bottom: 80px; " >
+        <audio id="myAudio">
+          <source src="voice.mp3" type="audio/mpeg">
+        </audio>
+      <button style="display: inline-block; position: relative; top: 20vw; width: 45vw; text-align: center;" class="btn btn-primary" type="button"  onclick="playAudio()">Hear Me</button>   
+  </div>
+</div>
+   
+</div>
+<br><br>
+<div style="justify-content: center;  border-color: black; margin-right: 15px; margin-left: 15px; ">
+  <h2  id="Edu"  style="  text-align: center;   color:rgb(46, 42, 42);  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">My Education</h2>
+  
+  </div><!--Edu-->
+<div id="carouselExampleDark1" class="carousel carousel-dark slide" style="overflow-x: hidden;">
+  <div id="carousel1"  style="position: relative; justify-content: center; display: flex;">
+    <button type="button" data-bs-target="#carouselExampleDark1" data-bs-slide-to="0" class="Btn1 _active1 "  aria-label="Slide 1">Graduation</button>
+    <button type="button" data-bs-target="#carouselExampleDark1" data-bs-slide-to="1" class="Btn1" aria-label="Slide 2">Higher Secondary</button>
+    <button type="button" data-bs-target="#carouselExampleDark1" data-bs-slide-to="2" class="Btn1" aria-label="Slide 3">Secondary</button>
+  </div>
+<br>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <div class="container text-center" style="border-radius: 10px; background-color: rgb(250, 250, 241);  border-radius: 10px;">
+        <div class="row">
+          <div class="col "><img src="https://th-i.thgim.com/public/latest-news/51nxiw/article67654952.ece/alternates/LANDSCAPE_1200/LPU.jpg" style="width: calc(100% + 0.5vw); height: calc(260px + 0.5vw); border-radius: 10px;" alt="..."></div>
+          <div class="col-sm text-start">
+            <br><h5 > Lovely Professional University, Punjab, India</h5><br>
+      <h5 > B.Tech CSE</h5><br>
+      <h5 > Pass Out: 2025</h5><br>
+      <h5 > Currently Studying</h5>
+          </div>
+          
+        </div>
+        </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <div class="container text-center" style="border-radius: 10px; background-color: rgb(250, 250, 241); ">
+        <div class="row">
+          <div class="col "><img src="https://www.tarakeswarhighschool.com/slider/slide4.png" style="width: calc(100% + 0.5vw); height: calc(260px + 0.5vw); border-radius: 10px;" alt="..."></div>
+          <div class="col-sm text-start">
+            <br><h5 > Tarakeswar High School, Tarakeswar, India</h5><br>
+      <h5 > Higher Secondary</h5><br>
+      <h5 > Pass Out: 2021</h5><br>
+      <h5 > Percentage: 89</h5>
+          </div>
+          
+        </div>
+        </div>
+    </div>
+    <div class="carousel-item">
+      <div class="container text-center" style="border-radius: 10px; background-color: rgb(250, 250, 241); ">
+        <div class="row">
+          <div class="col "><img src="https://content.jdmagicbox.com/comp/hooghly/k7/9999p3211.3211.151012125342.b1k7/catalogue/tarakeswar-high-school-tarakeswar-hooghly-schools-ub88s2j720.jpg?clr=" style="width: calc(100% + 0.5vw); height: calc(260px + 0.5vw); border-radius: 10px;" alt="..."></div>
+          <div class="col-sm text-start">
+            <br><h5 > Bikash Bharati Blooms Day School, Tarakeswar, India</h5><br>
+      <h5 > Secondary</h5><br>
+      <h5 > Pass Out: 2019</h5><br>
+      <h5 > Percentage: 91.42</h5>
+          </div>
+          
+        </div>
+        </div>
+    </div>
+  </div>
+ 
+</div>
+
+
+<br><br>
+<div style="justify-content: center; position: relative; align-self: center;  border-color: black; margin-right: 15px; margin-left: 15px; ">
+  <h2  id="Ski"  style="position: relative;  text-align: center;   color:rgb(46, 42, 42); font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">My Skills</h2>
+  <h5  style="position: relative; text-align: center;   color:rgb(46, 42, 42);  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Click on the skills for justification - based practice and projects, and click on them for details. 
+  <a style="color: rgb(63, 41, 112); font-weight: bold;">Here, every shadow is a button</a></h5>
+  </div>
+
+<!--Carousel-->
+<div id="carouselExampleDark" class="carousel carousel-dark slide" style="overflow-x: hidden;" >
+  <div id="carousel"  style="position: relative; justify-content: center; display: flex;">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="Btn _active "  aria-label="Slide 1">Technical</button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" class="Btn" aria-label="Slide 2">Non-Technical</button>
+  </div>
+  <div class="carousel-inner" id="SkillsClick">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <div class="container text-center" >
+
+        <div class="row " >
+        <div class="col-sm">
+          <div  class="d-flex align-items-center Skills" 
+          type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample0" aria-expanded="true" aria-controls="collapseWidthExample" >
+            <div class=" col">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/1853px-C_Programming_Language.svg.png" class="img-fluid rounded-start" 
+                style="width: auto; height: calc(65px + 0.5vw);">
+            </div>
+            <div class="flex-grow-1 ms-3 col">
+              <h5>C Programming Language</h5>
+            </div>
+          </div>
+          <center>
+            <div class="collapse collapse-horizontal SkillBox text-start"id="collapseWidthExample0" >
+              
+               <h5>.Based Projects</h5>
+                <li class="btn SkillBoxInside" type="button" onclick="window.open('https://github.com/Sohan-2001/Preemptive-Priority-Algorithm-C-')">Preemptive-Priority-Algorithm-C-
+                </li>
+              
+          </div>
+        </center>
+        </div>
+      <div class="col-sm">
+        <div class="d-flex align-items-center Skills" 
+          type="button" data-bs-toggle="collapse"  aria-expanded="true" aria-controls="collapseWidthExample" data-bs-target="#collapseWidthExample1">
+            <div class=" col">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png" class="img-fluid rounded-start" 
+                style="width: auto; height: calc(65px + 0.5vw);">
+            </div>
+            <div class="flex-grow-1 ms-3 col">
+              <h5>C++ Programming Language</h5>
+            </div>
+          </div>
+          <center>
+            <div class="collapse collapse-horizontal SkillBox text-start"id="collapseWidthExample1">
+              <ul>
+                <h5>.Practice</h5>
+                <li class="btn SkillBoxInside" type="button" onclick="window.open('https://www.hackerrank.com/profile/sohan100karfa')">HackerRank Silver Level
+                </li>
+              </ul>
+          </div>
+        </center>
+      </div>
+        <div class="col-sm">
+          <div class="d-flex align-items-center Skills" 
+          type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample2" aria-expanded="true" aria-controls="collapseWidthExample" >
+            <div class=" col">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" class="img-fluid rounded-start" 
+                style="width: auto; height: calc(65px + 0.5vw);">
+            </div>
+            <div class="flex-grow-1 ms-3 col">
+              <h5>Python Programming Language</h5>
+            </div>
+          </div>
+          <center>
+            <div class="collapse collapse-horizontal SkillBox text-start"id="collapseWidthExample2" >
+              <ul>
+                <h5>.Practice</h5>
+                <li class="btn SkillBoxInside" type="button" onclick="window.open('https://www.hackerrank.com/profile/sohan100karfa')">HackerRank Golden Level
+                </li>
+              </ul>
+              <br>
+              <ul>
+                <h5>.Based Projects</h5>
+                <li class="btn SkillBoxInside"   type="button" onclick="window.open('https://github.com/Sohan-2001/Captcha-Simple')">1. Captcha-Simple</li>
+                <li class="btn SkillBoxInside" type="button" onclick="window.open('https://github.com/Sohan-2001/Binary_Calculator.py')">2. Binary_Calculator</li>
+                <li class="btn SkillBoxInside" type="button" onclick="window.open('https://github.com/Sohan-2001/BoW-BagOfWords')">3. BoW-BagOfWords</li>
+                <li class="btn SkillBoxInside" type="button" onclick="window.open('https://github.com/Sohan-2001/StaticTypingSpeedTest')">4. StaticTypingSpeedTest</li>
+                <li class="btn SkillBoxInside" type="button" onclick="window.open('https://github.com/Sohan-2001/Face_Attendace')">5. Face_Attendace</li>
+                <li class="btn SkillBoxInside"  type="button" onclick="window.open('https://github.com/Sohan-2001/Basic_Resume_Maker')">6. Basic_Resume_Maker</li>
+              </ul>
+          </div>
+        </center>
+        </div>
+          </div>
+      <div class="row " >
+        <div class="col-sm">
+          <div class="d-flex align-items-center Skills" 
+          type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample3" aria-expanded="true" aria-controls="collapseWidthExample" >
+            <div class=" col">
+              <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/800px-Java_programming_language_logo.svg.png" class="img-fluid rounded-start" 
+                style="width: auto; height: calc(65px + 0.5vw);">
+            </div>
+            <div class="flex-grow-1 ms-3 col">
+              <h5>Java Programming Language</h5>
+            </div>
+          </div>
+          <center>
+            <div class="collapse collapse-horizontal SkillBox text-start"id="collapseWidthExample3" >
+              <ul>
+                <h5>.Practice</h5>
+                <li class="btn SkillBoxInside" type="button" onclick="window.open('https://www.hackerrank.com/profile/sohan100karfa')">HackerRank Silver Level
+                </li>
+              </ul>
+              <br>
+              <ul>
+                <h5>.Based Projects</h5>
+                <li class="btn SkillBoxInside"   type="button" onclick="window.open('https://github.com/Sohan-2001/TherPhoneMeter')">1. TherPhoneMeter</li>
+              </ul>
+              <br>
+              <ul>
+                <h5>.Publication</h5>
+                <li class="btn SkillBoxInside"   type="button" onclick="window.open('https://play.google.com/store/apps/details?id=com.sohan.thermo')">1. TherPhoneMeter (PlayStore)</li>
+              </ul>
+          </div>
+        </center>
+        </div>
+      <div class="col-sm">
+        <div class="d-flex align-items-center Skills" 
+          type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample4" aria-expanded="true" aria-controls="collapseWidthExample" >
+            <div class=" col">
+              <img src="https://www.ankitweblogic.com/javascript/js_img/javascript.png" class="img-fluid rounded-start" 
+                style="width: auto; height: calc(65px + 0.5vw);">
+            </div>
+            <div class="flex-grow-1 ms-3 col">
+              <h5>JavaScript Programming Language</h5>
+            </div>
+          </div>
+          <center>
+            <div class="collapse collapse-horizontal SkillBox text-start"id="collapseWidthExample4" >
+              <ul>
+                <h5>.Based Projects</h5>
+                <li class="btn SkillBoxInside" type="button" onclick="window.open('https://github.com/Sohan-2001/MyPortfolio')">1. This Portfolio
+                </li>
+              </ul>
+          </div>
+        </center>
+      </div>
+        <div class="col-sm">
+          <div class="d-flex align-items-center Skills" "
+          type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample5" aria-expanded="true" aria-controls="collapseWidthExample" >
+            <div class=" col">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png" class="img-fluid rounded-start" 
+                style="width: auto; height: calc(65px + 0.5vw);">
+            </div>
+            <div class="flex-grow-1 ms-3 col">
+              <h5>SQL Programming Language</h5>
+            </div>
+          </div>
+        </div>
+          </div>
+          <div class="row " >
+            <div class="col-sm">
+              <div class="d-flex align-items-center Skills" 
+              type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample6" aria-expanded="true" aria-controls="collapseWidthExample" >
+                <div class=" col">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" class="img-fluid rounded-start" 
+                    style="width: auto; height: calc(65px + 0.5vw);">
+                </div>
+                <div class="flex-grow-1 ms-3 col">
+                  <h5>HTML Markup Language</h5>
+                </div>
+              </div>
+              <center>
+                <div class="collapse collapse-horizontal SkillBox text-start"id="collapseWidthExample6" >
+                  <ul>
+                   <h5>.Based Projects</h5>
+                    <li class="btn SkillBoxInside" type="button" onclick="window.open('https://github.com/Sohan-2001/MyPortfolio')">1. This Portfolio
+                    </li>
+                    <li class="btn SkillBoxInside" type="button" 
+                    onclick="window.open('https://github.com/Sohan-2001/Foody.com')">2. Foody.com
+                    </li>
+                  </ul>
+              </div>
+            </center>
+            </div>
+          <div class="col-sm">
+            <div class="d-flex align-items-center Skills" 
+              type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample7" aria-expanded="true" aria-controls="collapseWidthExample" >
+                <div class=" col">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"" class="img-fluid rounded-start" 
+                    style="width: auto; height: calc(65px + 0.5vw);">
+                </div>
+                <div class="flex-grow-1 ms-3 col">
+                  <h5>CSS Stylesheet Language</h5>
+                </div>
+              </div>
+              <center>
+                <div class="collapse collapse-horizontal SkillBox text-start"id="collapseWidthExample7" >
+                  <ul>
+                   <h5>.Based Projects</h5>
+                    <li class="btn SkillBoxInside" type="button" onclick="window.open('https://github.com/Sohan-2001/MyPortfolio')">1. This Portfolio
+                    </li>
+                    <li class="btn SkillBoxInside" type="button" 
+                    onclick="window.open('https://github.com/Sohan-2001/Foody.com')">2. Foody.com
+                    </li>
+                  </ul>
+              </div>
+            </center>
+          </div>
+            <div class="col-sm">
+              <div class="d-flex align-items-center Skills" 
+              type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample8" aria-expanded="true" aria-controls="collapseWidthExample" >
+                <div class=" col">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1024px-Bootstrap_logo.svg.png" class="img-fluid rounded-start" 
+                    style="width: auto; height: calc(65px + 0.5vw);">
+                </div>
+                <div class="flex-grow-1 ms-3 col">
+                  <h5>Bootstrap CSS Framework</h5>
+                </div>
+              </div>
+              <center>
+                <div class="collapse collapse-horizontal SkillBox text-start"id="collapseWidthExample8" >
+                  <ul>
+                    <h5>.Based Projects</h5>
+                    <li class="btn SkillBoxInside" type="button" onclick="window.open('https://github.com/Sohan-2001/MyPortfolio')">1. This Portfolio
+                    </li></ul>
+              </div>
+            </center>
+            </div>
+              </div>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <div class="container text-center" >
+
+        <div class="row " >
+        <div class="col-sm">
+          <div class="d-flex align-items-center Skills" 
+          type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample00" aria-expanded="true" aria-controls="collapseWidthExample" >
+            <div class=" col">
+              <img src="1.png" class="img-fluid rounded-start" 
+                style="width: auto; height: calc(65px + 0.5vw);">
+            </div>
+            <div class="flex-grow-1 ms-3 col">
+              <h5>Communication</h5>
+            </div>
+          </div>
+          <center>
+            <div class="collapse collapse-horizontal SkillBox text-start" id="collapseWidthExample00" >
+              <ul>
+                <li><h6><b>Native:</b> Bengali</h6></li>
+              </ul>
+              <ul>
+                <li><h6><b>Expert:</b> English</h6></li>
+              </ul>
+              <ul>
+                <li><h6><b>Comfortable:</b> Hindi</h6></li>
+              </ul>
+          </div>
+        </center>
+        </div>
+      <div class="col-sm">
+        <div class="d-flex align-items-center Skills" 
+          type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample01" aria-expanded="true" aria-controls="collapseWidthExample" >
+            <div class=" col">
+              <img
+               src="2.png" class="img-fluid rounded-start" 
+                style="width: auto; height: calc(65px + 0.5vw);">
+            </div>
+            <div class="flex-grow-1 ms-3 col">
+              <h5>Cooperation</h5>
+            </div>
+          </div>
+          <center>
+            <div class="collapse collapse-horizontal SkillBox text-start"id="collapseWidthExample01" >
+              <ul>
+                <li><h6><b>SIH 2023:</b> I participated as a team member in Smart India Hachathon 2023. My suggestions for team name and project's
+                   name were appreciated viz. Coding Knights and Project-ION. Unfortunately we didn't reach the final.</h6></li>
+              </ul>
+               
+          </div>
+        </center>
+      </div>
+        <div class="col-sm">
+          <div class="d-flex align-items-center Skills" 
+          type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample02" aria-expanded="true" aria-controls="collapseWidthExample" >
+            <div class=" col">
+              <img 
+              src="3.png" class="img-fluid rounded-start" 
+                style="width: auto; height: calc(65px + 0.5vw);">
+            </div>
+            <div class="flex-grow-1 ms-3 col">
+              <h5>Adaptability</h5>
+            </div>
+          </div>
+          <center>
+            <div class="collapse collapse-horizontal SkillBox text-start"id="collapseWidthExample02" >
+              <ul><li>
+              <h6>
+              <b>This Portfolio: </b>I was not sure about the design and features when I started making this portfolio website. Everyday I was changing my previous design ideas and thinking of adding something better. Not all the time I could do it in traditional way.</h6>
+            </li>
+              </ul>
+        </div>
+        </center>
+        </div>
+          </div>
+      <div class="row " >
+        <div class="col-sm">
+          <div class="d-flex align-items-center Skills"
+          type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample03" aria-expanded="true" aria-controls="collapseWidthExample" >
+            <div class=" col">
+              <img src="4.png" class="img-fluid rounded-start" 
+                style="width: auto; height: calc(65px + 0.5vw);">
+            </div>
+            <div class="flex-grow-1 ms-3 col">
+              <h5>Organization</h5>
+            </div>
+          </div>
+          <center>
+            <div class="collapse collapse-horizontal SkillBox text-start"id="collapseWidthExample03" >
+              <ul><li>
+                <h6>
+                <b>Assignments: </b>College Assignments have always been an headache between the regular classes.
+               Whenever I get assignments I start completing from the very beginnig to avoid the last minute hurrry and make time 
+              between regular classes, self-study and all others.</h6>
+              </li>
+              
+                </ul></h5>
+        </div>
+        </center>
+        </div>
+      <div class="col-sm">
+        <div class="d-flex align-items-center Skills" 
+          type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample04" aria-expanded="true" aria-controls="collapseWidthExample" >
+            <div class=" col">
+              <img 
+              src="5.png" 
+              class="img-fluid rounded-start" 
+                style="width: auto; height: calc(65px + 0.5vw);">
+            </div>
+            <div class="flex-grow-1 ms-3 col">
+              <h5>Creativity</h5>
+            </div>
+          </div>
+          <center>
+            <div class="collapse collapse-horizontal SkillBox text-start"id="collapseWidthExample04" >
+              <ul><li>
+                <h6>
+                <b>This Portfolio: </b>I am weak in Web Development, I designed this website portfolio just with the help of Bootstrap besides 
+              HTML, CSS and a little bit JavaScript. Being unware of several JS features and different advanced types of CSS 
+            it was a bit challenge to build a well-furnished site. I put into my creativity and tried to decorate this site
+          with the help of very knowledge of web development I have.</h6>
+              </li>
+                </ul>
+        </div>
+        </center>
+      </div>
+        <div class="col-sm">
+          <div class="d-flex align-items-center Skills" "
+          type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample05" aria-expanded="true" aria-controls="collapseWidthExample" >
+            <div class=" col">
+              <img
+src="6.png"  class="img-fluid rounded-start" 
+                style="width: auto; height: calc(65px + 0.5vw);">
+            </div>
+            <div class="flex-grow-1 ms-3 col">
+              <h5>Leadership</h5>
+            </div>
+          </div>
+          <center>
+            <div class="collapse collapse-horizontal SkillBox text-start"id="collapseWidthExample05" >
+              <ul>
+                <li>
+                <h6>
+                <b>TherPhoneMeter: </b>As an assignment from college I got a team to make something with the Java Programming Language. By the time I got the project I 
+              became excited about Android apps but my team members had null idea about this. I paved them the way and completed the project 
+            and my first Android App. Later I published it in the PlayStore.</h6>
+              </li>
+              <li>
+                <h6>
+                <b>Binary_Calculator: </b>As an assignment from college I got a team to make something with the Python Programming Language. We were to make a binary calculator 
+              using Tkinter. My team members were a bit weak about Tkinter, so, I guided them to complete the project altogether.</h6>
+              </li>
+                </ul>
+        </div>
+        </center>
+        </div>
+          </div>
+          <div class="row " >
+            <div class="col-sm">
+              <div class="d-flex align-items-center Skills" "
+              type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample06" aria-expanded="true" aria-controls="collapseWidthExample" >
+                <div class=" col">
+                  <img src="https://www.vhv.rs/dpng/d/155-1558456_all-about-me-essay-plan-objectives-critical-thinking.png" class="img-fluid rounded-start" 
+                    style="width: auto; height: calc(65px + 0.5vw);">
+                </div>
+                <div class="flex-grow-1 ms-3 col">
+                  <h5>Critical thinking</h5>
+                </div>
+              </div>
+              <center>
+                <div class="collapse collapse-horizontal SkillBox text-start"id="collapseWidthExample06" >
+                  <ul><li>
+                    <h6>
+                    <b>Amazon Internship Test: </b>I had to optimize the code in Amazon's SDE role's internship test. I did something 
+                  which I had thought at that moment and never did like before and eventually decreased the time complexity, 
+                I had to utilise more space.</h6>
+                  </li>
+                    </ul>
+            </div>
+            </div>
+          <div class="col-sm">
+            <div class="d-flex align-items-center Skills" 
+              type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample07" aria-expanded="true" aria-controls="collapseWidthExample" >
+                <div class=" col">
+                  <img src="https://cdn-icons-png.flaticon.com/512/8712/8712079.png" class="img-fluid rounded-start" 
+                    style="width: auto; height: calc(65px + 0.5vw);">
+                </div>
+                <div class="flex-grow-1 ms-3 col">
+                  <h5 class="text-center">Emotional intelligence</h5>
+                </div>
+              </div>
+              <center>
+                <div class="collapse collapse-horizontal SkillBox text-start"id="collapseWidthExample07" >
+                  <ul><li>
+                    <h6>
+                    <b>COVID time: </b>Inspite of rising negativity I was keeping myself calm and joyful during the covid time and 
+                  kept myself engaged in study, chess and story books.</h6>
+                  </li>
+                    </ul>
+            </div>
+            </center>
+          </div>
+            <div class="col-sm">
+              <div class="d-flex align-items-center Skills" 
+              type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample08" aria-expanded="true" aria-controls="collapseWidthExample" >
+                <div class=" col">
+                  <img src="https://static.thenounproject.com/png/4230012-200.png" class="img-fluid rounded-start" 
+                    style="width: auto; height: calc(65px + 0.5vw);">
+                </div>
+                <div class="flex-grow-1 ms-3 col">
+                  <h5>Quick Learning</h5>
+                </div>
+              </div>
+              <center>
+                <div class="collapse collapse-horizontal SkillBox text-start"id="collapseWidthExample08" >
+                  <ul><li>
+                    <h6>
+                    <b>This Portfolio: </b>I was told about the importance of a portfolio website but I was too weak in web 
+                  development to build a frontend website. I quickly learned the basics of HTML, CSS, and a quite a bit Bootstrap within 
+                10 days and built the skeleton of this portfolio within the next 2 days.</h6>
+                  </li>
+                    </ul>
+            </div>
+            </center>
+            </div>
+              </div>
+      </div>
+
+    </div>
+    
+  </div>
+ 
+</div>
+<!--Carousel-->
+
+  
+<br><br>
+<div class="text-center" style="justify-content: center;  border-color: black; margin-right: 10px; margin-left: 10px; ">
+<h2  id="Pro"  style="  text-align: center;   color:rgb(46, 42, 42);  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">My Projects</h2>
+<h5  style=" text-align: center;   color:rgb(46, 42, 42);  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">In the "Skill" section every porjects of mine are there (click on the names 
+to visit the github pages). From there I picked up some of the intersting ones and highlighting here below.</h5>
+</div><br>
+<div class="container text-center" style="background-color: rgb(243, 247, 241); border-radius: 10px;  width: 95%;">
+  <div class="row" style="position: relative; justify-content: center;">
+    <div class="col" style="box-shadow: 5px 5px 5px 1px rgb(118, 157, 163);">
+    <div class="card mb-3" style="max-width: 500px; max-height: 350px; max-height: 300px;  background-color: transparent; border-color: transparent;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="brm.png" class="img-fluid rounded-start" alt="..." ">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title text-start">Basic Resume Maker</h5>
+            
+            <p class="card-text text-start" s><small class="btn btn-secondary" onclick="window.open('://github.com/Sohan-2001/Basic_Resume_Maker')">GitHub</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="col" style="box-shadow: 5px 5px 5px 1px rgb(118, 157, 163);">
+      <div class="card mb-3" style="  max-width: 500px; max-height: 350px; max-height: 300px;  background-color: transparent; border-color: transparent;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="face.png" class="img-fluid rounded-start" alt="..."   >
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title text-start">Face_Attendace</h5>
+              <p class="card-text text-start"><small class="btn btn-secondary" onclick="window.open('https://github.com/Sohan-2001/Face_Attendace?tab=readme-ov-file')">GitHub</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="row" style="position: relative; justify-content: center;">
+  <div class="col" style="box-shadow: 5px 5px 5px 1px rgb(118, 157, 163);">
+  <div class="card mb-3" style=" max-width: 500px; max-height: 350px;background-color: transparent; border-color: transparent;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="ther.webp" class="img-fluid rounded-start" alt="..."  >
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title text-start">TherPhoneMeter</h5>
+          <p class="card-text text-start"><small class="btn btn-secondary" onclick="window.open('https://github.com/Sohan-2001/TherPhoneMeter')">GitHub</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="col" style="box-shadow: 5px 5px 5px 1px rgb(118, 157, 163);">
+    <div class="card mb-3" style="    max-width: 500px; max-height: 350px; background-color: transparent; border-color: transparent; border-color: transparent;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="image.png" class="img-fluid rounded-start" alt="..."  >
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title text-start">This Portfolio</h5>
+            <p class="card-text text-start"><small class="btn btn-secondary" onclick="window.open('https://github.com/Sohan-2001/MyPortfolio')">GitHub</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+<br><br>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom " id="Con" >
+  <div class="container-fluid" style="background-color: darkslategray;">
+    <a class="navbar-brand" style="color: aliceblue;" >Contacts</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span style="color: rgb(198, 208, 216); font-size: smaller; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">CLICK</span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a style="color:rgb(214, 223, 223);" class="nav-link btn  btn-secondary" aria-current="page" onclick="window.open(' https://www.linkedin.com/in/sohan-karfa-72819521b/')">Mail</a>
+        <a style="color: rgb(214, 223, 223);" class="nav-link btn btn-secondary" onclick="window.open(' https://www.linkedin.com/in/sohan-karfa-72819521b/')">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+<script src="index.js"></script>
+</body>
+</html>
