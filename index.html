@@ -1,7 +1,37 @@
 <!doctype html>
 <html lang="en">
-  <head>  
-
+  <head>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-analytics.js";
+ 
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+    apiKey: "AIzaSyAILSE3R6WVUZ3-O4res4KQwbGC40BDGfQ",
+    authDomain: "portfolio-aee19.firebaseapp.com",
+    databaseURL: "https://portfolio-aee19-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "portfolio-aee19",
+    storageBucket: "portfolio-aee19.appspot.com",
+    messagingSenderId: "525771955288",
+    appId: "1:525771955288:web:24f1fe2b6f8b1db7ab7e2d",
+    measurementId: "G-87NRFCY9WT"
+  };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+    
+  window.addEventListener('load', () => {
+      fetch('https://us-central1-portfolio-36ae4.cloudfunctions.net/captureIP')
+        .then(response => response.text())
+        .then(data => console.log(data))
+        .catch(error => {
+          console.error('Error fetching IP:', error);
+          console.log('Failed');
+        });
+    });
+    </script>
     <meta property="og:site_name" content="sohankarfa" />
     <meta
       property="og:title"
@@ -59,6 +89,7 @@
 
 
     </style>
+
 
      </head>
     <title>Sohan Karfa</title>
@@ -322,9 +353,6 @@
                 <h5>.Based Projects</h5>
                 <li class="btn SkillBoxInside" type="button" onclick="window.open('https://github.com/Sohan-2001/MyPortfolio')">1. This Portfolio
                 </li>
-                <li class="btn SkillBoxInside" type="button" 
-                    onclick="window.open('https://github.com/Sohan-2001/SpeedoMeter')">2. SpeedoMeter Chrome Extension
-                    </li>
               </ul>
           </div>
         </center>
@@ -363,9 +391,6 @@
                     <li class="btn SkillBoxInside" type="button" 
                     onclick="window.open('https://github.com/Sohan-2001/Foody.com')">2. Foody.com
                     </li>
-                    <li class="btn SkillBoxInside" type="button" 
-                    onclick="window.open('https://github.com/Sohan-2001/SpeedoMeter')">3. SpeedoMeter Chrome Extension
-                    </li>
                   </ul>
               </div>
             </center>
@@ -389,9 +414,6 @@
                     </li>
                     <li class="btn SkillBoxInside" type="button" 
                     onclick="window.open('https://github.com/Sohan-2001/Foody.com')">2. Foody.com
-                    </li>
-                    <li class="btn SkillBoxInside" type="button" 
-                    onclick="window.open('https://github.com/Sohan-2001/SpeedoMeter')">3. SpeedoMeter Chrome Extension
                     </li>
                   </ul>
               </div>
@@ -743,7 +765,7 @@ to visit the github pages). From there I picked up some of the intersting ones a
     
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a style="color:rgb(214, 223, 223);" class="nav-link btn  btn-secondary" aria-current="page" onclick="window.open(' mailto:sohan100karfa@gmail.com')">Mail</a>
+        <a style="color:rgb(214, 223, 223);" class="nav-link btn  btn-secondary" aria-current="page" onclick="window.open('mailto:sohan100karfa@gmail.com')">Mail</a>
         <a style="color: rgb(214, 223, 223);" class="nav-link btn btn-secondary" onclick="window.open(' https://www.linkedin.com/in/sohan-karfa-72819521b/')">LinkedIn</a>
       </div>
     </div>
@@ -752,16 +774,7 @@ to visit the github pages). From there I picked up some of the intersting ones a
 
 
 
-  
-  
-
-
-
-
-
-
-
-
+ 
 <script src="index.js"></script>
 </body>
 </html>
