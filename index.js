@@ -69,3 +69,17 @@ function playAudio() {
   x.play(); 
 }
 
+
+// File: functions/index.js
+const functions = require('firebase-functions');
+const admin = require('firebase-admin');
+admin.initializeApp();
+
+exports.captureIP = functions.https.onRequest((request, response) => {
+  const ip = request.headers['x-forwarded-for'] || request.connection.remoteAddress;
+  const ipsRef = admin.database().ref('ips');
+  ipsRef.push({ ip: ip })
+    .then(() => response.status(200).send('IP Address captured'))
+    .catch(error => response.status(500).send('Error capturing IP'));
+});
+
