@@ -1,37 +1,51 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <script type="module">
-      // Import the functions you need from the SDKs you need
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js";
-      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-analytics.js";
- 
-      // Your web app's Firebase configuration
-      const firebaseConfig = {
-    apiKey: "AIzaSyAILSE3R6WVUZ3-O4res4KQwbGC40BDGfQ",
-    authDomain: "portfolio-aee19.firebaseapp.com",
-    databaseURL: "https://portfolio-aee19-default-rtdb.asia-southeast1.firebasedatabase.app",
-    projectId: "portfolio-aee19",
-    storageBucket: "portfolio-aee19.appspot.com",
-    messagingSenderId: "525771955288",
-    appId: "1:525771955288:web:24f1fe2b6f8b1db7ab7e2d",
-    measurementId: "G-87NRFCY9WT"
-  };
-    
-      // Initialize Firebase
-      const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-    
-  window.addEventListener('load', () => {
-      fetch('https://us-central1-portfolio-36ae4.cloudfunctions.net/captureIP')
-        .then(response => response.text())
-        .then(data => console.log(data))
-        .catch(error => {
-          console.error('Error fetching IP:', error);
-          console.log('Failed');
-        });
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js";
+    import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-database.js";
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyAILSE3R6WVUZ3-O4res4KQwbGC40BDGfQ",
+      authDomain: "portfolio-aee19.firebaseapp.com",
+      databaseURL: "https://portfolio-aee19-default-rtdb.asia-southeast1.firebasedatabase.app",
+      projectId: "portfolio-aee19",
+      storageBucket: "portfolio-aee19.appspot.com",
+      messagingSenderId: "525771955288",
+      appId: "1:525771955288:web:24f1fe2b6f8b1db7ab7e2d",
+      measurementId: "G-87NRFCY9WT"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const database = getDatabase(app);
+
+    // Declare clientIpAddress as a global variable
+    var clientIpAddress = 'Error'; // Default value in case IP retrieval fails
+
+    // Function to write the IP address to Firebase
+    function writeVisit() {
+      const now = new Date().toISOString().replace(/\./g, ':');
+      set(ref(database, 'visits/' + now), {
+        visited: clientIpAddress
+      }).then(() => {
+        console.log('Write succeeded!');
+      }).catch((error) => {
+        console.error('Write failed: ', error);
+      });
+    }
+
+    // Get the IP address and write to Firebase
+    $(document).ready(() => {
+      $.getJSON("https://ipinfo.io", function(response) {
+        clientIpAddress = response.ip; // Set the IP address to the global variable
+        writeVisit(); // Call writeVisit after the IP address is retrieved
+      }, "jsonp");
     });
-    </script>
+  </script>
     <meta property="og:site_name" content="sohankarfa" />
     <meta
       property="og:title"
