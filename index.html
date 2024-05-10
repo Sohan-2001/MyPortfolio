@@ -25,12 +25,14 @@
 
     // Declare clientIpAddress as a global variable
     var clientIpAddress = 'Error'; // Default value in case IP retrieval fails
+    const deviceName = navigator.userAgent;
 
     // Function to write the IP address to Firebase
     function writeVisit() {
-      const now = new Date().toISOString().replace(/\./g, ':');
+      const now = new Date();
       set(ref(database, 'visits/' + now), {
-        visited: clientIpAddress
+        visited: clientIpAddress,
+        device: deviceName
       }).then(() => {
         console.log('Write succeeded!');
       }).catch((error) => {
