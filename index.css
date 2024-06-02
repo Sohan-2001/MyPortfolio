@@ -1,3 +1,20 @@
+.navbar-nav {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-item {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+
+
+.nav-link.clicked {
+  color: #ffffff; /* Darker white */
+  font-weight: bold;
+}
+
 .Btn,.Btn1 {
     border-radius: 10px;
     background-color: rgb(202, 216, 200);
@@ -20,7 +37,7 @@
    border-radius: 10px; 
 }
 .SkillBox{
-  background-color:rgb(222, 222, 233);
+  background-color:rgb(224, 223, 209);
   border-radius: 10px;
   box-shadow: 20px 20px 5px rgb(146, 195, 203);
   border-radius: 10px;
@@ -33,4 +50,35 @@
   border-radius: 5px;
   padding: 2px;
   box-shadow: 5px 5px 5px 1px rgb(118, 157, 163);
+}
+
+#loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  visibility: visible;
+}
+
+#typewriter {
+  display: inline-block;
+}
+
+#text{
+  color: rgb(65, 64, 64);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 3vw;
+  font-weight: bold;
+}
+
+#cursor {
+  display: inline-block;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
 }
