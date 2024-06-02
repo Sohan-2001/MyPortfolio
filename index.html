@@ -118,7 +118,12 @@
     
  
   <body style="overflow-x: hidden; margin-left: 0px; margin-right: 0px;">
-    <div id="loader" style="width: 100%; height: 100vh; display:flex; justify-content: center; align-items: center;"><img src="https://tamilnaducouncil.ac.in/wp-content/uploads/2018/10/loading-gif.gif"></div>
+    <div id="loader" style="width: 90vw;" >
+      <div id="typewriter">
+        <span id="text"></span>
+        <span id="cursor">|</span>
+    </div>
+    </div>
     
     <div class="loaded">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
@@ -131,7 +136,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <div class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" class="btn" aria-current="page" href="index.html">Home</a>
+          <a class="nav-link" class="btn"  href="#Home">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" class="btn" href="#Edu">Education</a>
@@ -143,6 +148,9 @@
           <a class="nav-link"  class="btn" href="#Pro">Projects</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link"  class="btn" href="#Ach">Achievements</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" class="btn" href="#Con">Contacts</a>
         </li>
       </div>
@@ -152,13 +160,13 @@
 </nav>
 
 
-<div class="row">
+<div class="row" id="Home">
     <div class="col-3">
       <img src="image.png" 
       style="width: 85%; " >
     </div>
     <div class="col-3">
-      <div id="typing" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:calc(20px + 3vw); position: relative; top:3vw; text-align: center;"></div>
+      <div id="typing" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:calc(20px + 3vw); position: relative; top:3vw; text-align: center;">Sohan Karfa</div>
       <div style="display: inline-block; position: relative; top: 6vw; text-align: center;  color: rgb(73, 123, 124); font-weight: 1px; font-size:calc(12px+1.5vw); font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; ">
         <a >"<p id="Time"; style="display: inline-block;"></p><br>I am Sohan Karfa. I am from Tarakeswar, Hooghly, West Bengal, India, Asia, Earth, Milky Way, Cosmos. 
           I believe in works rather than words. I have few hobbies like writing diary, photography, chess. I am a bad leader as I don't trust others for my
@@ -169,7 +177,7 @@
         <audio id="myAudio">
           <source src="voice.mp3" type="audio/mpeg">
         </audio>
-      <button style="display: inline-block; position: relative; top: 15vw; width: 50vw; text-align: center;" class="btn btn-primary" type="button"  onclick="playAudio()">Hear Me - eight seconds</button>   
+      <button style="display: inline-block; position: relative; top: 15vw; width: 50vw; text-align: center;" class="btn btn-primary" type="button"  onclick="playAudio()">Hear Me - Eight Seconds</button>   
   </div>
 </div>
    
@@ -204,7 +212,7 @@
     <div class="carousel-item" data-bs-interval="2000">
       <div class="container text-center" style="border-radius: 10px; background-color: rgb(250, 250, 241); ">
         <div class="row">
-          <div class="col "><img src="https://www.tarakeswarhighschool.com/slider/slide4.png" style="width: calc(100% + 0.5vw); height: calc(260px + 0.5vw); border-radius: 10px;" alt="..."></div>
+          <div class="col "><img src="THS.jpg" style="width: calc(100% + 0.5vw); height: calc(260px + 0.5vw); border-radius: 10px;" alt="..."></div>
           <div class="col-sm text-start">
             <br><h5 > Tarakeswar High School, Tarakeswar, India</h5><br>
       <h5 > Higher Secondary</h5><br>
@@ -314,7 +322,7 @@
               </ul>
               <br>
               <ul>
-                <h5>.Based Projects</h5>
+                <h5 >.Based Projects</h5>
                 <li class="btn SkillBoxInside"   type="button" onclick="window.open('https://github.com/Sohan-2001/Captcha-Simple')">1. Captcha-Simple</li>
                 <li class="btn SkillBoxInside" type="button" onclick="window.open('https://github.com/Sohan-2001/Binary_Calculator.py')">2. Binary_Calculator</li>
                 <li class="btn SkillBoxInside" type="button" onclick="window.open('https://github.com/Sohan-2001/BoW-BagOfWords')">3. BoW-BagOfWords</li>
@@ -349,6 +357,8 @@
               <ul>
                 <h5>.Based Projects</h5>
                 <li class="btn SkillBoxInside"   type="button" onclick="window.open('https://github.com/Sohan-2001/TherPhoneMeter')">1. TherPhoneMeter</li>
+                <li class="btn SkillBoxInside"   type="button" onclick="window.open('https://github.com/Sohan-2001/Student-Record-Management-System')">2. Student-Record-Management-System</li>
+              
               </ul>
               <br>
               <ul>
@@ -461,7 +471,81 @@
               </div>
             </center>
             </div>
+          </div>
+            <!--Kotlin-->
+            <div class="row " >
+              <div class="col-sm">
+                <div class="d-flex align-items-center Skills" 
+                type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExampleKotlin" aria-expanded="true" aria-controls="collapseWidthExample" >
+                  <div class=" col">
+                    <img src="kotlin.png" class="img-fluid rounded-start" 
+                      style="width: auto; height: calc(65px + 0.5vw);">
+                  </div>
+                  <div class="flex-grow-1 ms-3 col">
+                    <h5>Kotlin Programming Language</h5>
+                  </div>
+                </div>
+                <center>
+                  <div class="collapse collapse-horizontal SkillBox text-start"id="collapseWidthExampleKotlin" >
+                    <ul>
+                     <h5>.Based Publication</h5>
+                      <li class="btn SkillBoxInside" type="button" onclick="window.open('https://play.google.com/store/apps/details?id=com.bustime.demo_database_connect')">1. Bus Time (PlayStore)
+                      </li>
+                      
+                    </ul>
+                </div>
+              </center>
               </div>
+              <!--Firebase-->
+              <div class="col-sm">
+                <div class="d-flex align-items-center Skills" 
+                type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExampleFirebase" aria-expanded="true" aria-controls="collapseWidthExample" >
+                  <div class=" col">
+                    <img src="firebase.png" class="img-fluid rounded-start" 
+                      style="width: auto; height: calc(65px + 0.5vw);">
+                  </div>
+                  <div class="flex-grow-1 ms-3 col">
+                    <h5>Firebase Database</h5>
+                  </div>
+                </div>
+                <center>
+                  <div class="collapse collapse-horizontal SkillBox text-start"id="collapseWidthExampleFirebase" >
+                    <ul>
+                     <h5>.Based Publication</h5>
+                      <li class="btn SkillBoxInside" type="button" onclick="window.open('https://play.google.com/store/apps/details?id=com.bustime.demo_database_connect')">1. Bus Time (PlayStore)
+                      </li>
+                      
+                    </ul>
+                </div>
+              </center>
+              </div>
+              <!--Android Studio-->
+              <div class="col-sm">
+                <div class="d-flex align-items-center Skills" 
+                type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExampleAndroidStudio" aria-expanded="true" aria-controls="collapseWidthExample" >
+                  <div class=" col">
+                    <img src="android _studio.png" class="img-fluid rounded-start" 
+                      style="width: auto; height: calc(65px + 0.5vw);">
+                  </div>
+                  <div class="flex-grow-1 ms-3 col">
+                    <h5>Android Studio</h5>
+                  </div>
+                </div>
+                <center>
+                  <div class="collapse collapse-horizontal SkillBox text-start"id="collapseWidthExampleAndroidStudio" >
+                    <ul>
+                      <h5>.Based Publication</h5>
+                      <li class="btn SkillBoxInside" type="button" onclick="window.open('https://play.google.com/store/apps/details?id=com.bustime.demo_database_connect')">1. Bus Time (PlayStore)
+                        <li class="btn SkillBoxInside" type="button" onclick="window.open('https://play.google.com/store/apps/details?id=com.sohan.thermo')">2. TherPhoneMeter (PlayStore)
+                     
+                      </li>
+                    </ul>
+                </div>
+              </center>
+              </div>
+              </div>
+              
+              
       </div>
     </div>
     <div class="carousel-item" data-bs-interval="2000">
@@ -715,9 +799,15 @@ to visit the github pages). From there I picked up some of the intersting ones a
         </div>
         <div class="col-md-8">
           <div class="card-body">
-            <h5 class="card-title text-start">Basic Resume Maker</h5>
+
+            <div class="card-text text-start">
+              <h5>Basic Resume Maker</h5>
+            <p><small class="btn btn-secondary" onclick="window.open('https://github.com/Sohan-2001/Basic_Resume_Maker')">GitHub</small></p>
+            <br/>
+            <button class="btn-primary" style="background-color: rgb(58, 51, 80); color: white;">Python</button>
+            <button class="btn-primary" style="background-color: rgb(176, 2, 2); color: white;">Tkinter</button>
+             </div>
             
-            <p class="card-text text-start" s><small class="btn btn-secondary" onclick="window.open('https://github.com/Sohan-2001/Basic_Resume_Maker')">GitHub</small></p>
           </div>
         </div>
       </div>
@@ -727,13 +817,19 @@ to visit the github pages). From there I picked up some of the intersting ones a
       <div class="card mb-3" style="  max-width: 500px;   background-color: transparent; border-color: transparent;">
         <div class="row g-0">
           <div class="col-md-4">
-            <img src="face.png" class="img-fluid rounded-start" alt="..."   >
+            <img src="srms.png" height="90vh" class="rounded-start" alt="..."   >
           </div>
           <div class="col-md-8">
             <div class="card-body">
-              <h5 class="card-title text-start">Face_Attendace</h5>
-              <p class="card-text text-start"><small class="btn btn-secondary" onclick="window.open('https://github.com/Sohan-2001/Face_Attendace?tab=readme-ov-file')">GitHub</small></p>
-            </div>
+              <h5 class="card-title text-start">Student Record Management System</h5>
+              <div class="card-text text-start">
+                 <p ><small class="btn btn-secondary" onclick="window.open('https://github.com/Sohan-2001/Student-Record-Management-System')">GitHub</small></p>
+                <br/>
+                <button class="btn-primary" style="background-color: rgb(58, 51, 80); color: white;">Java</button>
+                <button class=" btn-primary" style="background-color: rgb(176, 2, 2); color: white;">MySql</button>
+          
+              </div>
+               </div>
           </div>
         </div>
       </div>
@@ -744,13 +840,19 @@ to visit the github pages). From there I picked up some of the intersting ones a
   <div class="card mb-3" style=" max-width: 500px; background-color: transparent; border-color: transparent;">
     <div class="row g-0">
       <div class="col-md-4">
-        <img src="ther.webp" class="img-fluid rounded-start" alt="..."  >
+        <img src="BusTimeFeatureGraphic.png" height="100vh" class="rounded-start" alt="..."  >
       </div>
       <div class="col-md-8">
         <div class="card-body">
-          <h5 class="card-title text-start">TherPhoneMeter</h5>
-          <p class="card-text text-start"><small class="btn btn-secondary" onclick="window.open('https://github.com/Sohan-2001/TherPhoneMeter')">GitHub</small></p>
-        </div>
+          <h5 class="card-title text-start">Bus Time</h5>
+          <div class="card-text text-start">
+            <p ><small class="btn btn-secondary" onclick="window.open('https://play.google.com/store/apps/details?id=com.bustime.demo_database_connect')">PlayStore</small></p>
+            <br/>
+            <button class="btn-primary" style="background-color: rgb(58, 51, 80); color: white;">Kotlin</button>
+            <button class="btn-primary" style="background-color: rgb(176, 2, 2); color: white;">Firebase</button>
+             
+          </div>
+           </div>
       </div>
     </div>
   </div>
@@ -764,8 +866,14 @@ to visit the github pages). From there I picked up some of the intersting ones a
         <div class="col-md-8">
           <div class="card-body">
             <h5 class="card-title text-start">This Portfolio</h5>
-            <p class="card-text text-start"><small class="btn btn-secondary" onclick="window.open('https://github.com/Sohan-2001/MyPortfolio')">GitHub</small></p>
-          </div>
+            <div class="card-text text-start">
+              <p ><small class="btn btn-secondary" onclick="window.open('https://github.com/Sohan-2001/MyPortfolio')">GitHub</small></p>
+              <br/>
+              <button class="btn-primary" style="background-color: rgb(58, 51, 80); color: white;">HTML</button>
+            <button class="btn-primary" style="background-color: rgb(176, 2, 2); color: white;">CSS</button>
+           
+            </div>
+              </div>
         </div>
       </div>
     </div>
@@ -773,12 +881,58 @@ to visit the github pages). From there I picked up some of the intersting ones a
 </div>
 </div>
 
+<br><br>
 
+<div id="Ach" class="text-center" style="justify-content: center;  border-color: black; margin-right: 10px; margin-left: 10px; ">
+<h2  id="Pro"  style="  text-align: center;   color:rgb(46, 42, 42);  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+  My Achievements</h2>
+
+</div>
+
+<!-- Achievements -->
+<div id="achv1" class="text-center" style="display: flex; justify-content: center; border-color: black; margin-top: 20px;">
+  <div class="card mb-3 text-start" style="width: 90vw; border: 1px solid #ddd; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="achv1.png" class="img-fluid rounded-start" alt="..." style="height: 30vh; border-top-left-radius: 10px; border-bottom-left-radius: 10px;">
+      </div>
+      <div class="col-md-8" style="display: flex; align-items: center; padding: 20px;">
+        <div class="card-body text-start">
+          <h1 class="card-title" style="font-size: 2em; color: #2c3e50;">WINNER</h1><br/>
+          <h6 class="card-text" style="font-size: 1.2em; color: #7f8c8d;">
+            Name: Always Executable (Mini Hackathon - JAVA)<br/><br/>
+            Organizer: TechnOcean
+          </h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="text-center" style="display: flex; justify-content: center; border-color: black; margin-top: 20px;">
+  <div class="card mb-3 text-start" style="width: 90vw; border: 1px solid #ddd; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="grammar1.png" class="img-fluid rounded-start" alt="..." style="height: 30vh; border-top-left-radius: 10px; border-bottom-left-radius: 10px;">
+      </div>
+      <div class="col-md-8" style="display: flex; align-items: center; padding: 20px;">
+        <div class="card-body text-start">
+          <h1 class="card-title" style="font-size: 2em; color: #2c3e50;">WINNER</h1><br/>
+          <h6 class="card-text" style="font-size: 1.2em; color: #7f8c8d;">
+            Name: College Grammar Competition<br/><br/>
+            Organizer: Lovely Professional University
+          </h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Achievements -->
 
 
 <br><br>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom " id="Con" >
+<nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom " id="Con">
   <div class="container-fluid" style="background-color: darkslategray;">
     <a class="navbar-brand" style="color: aliceblue;" >Contacts</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
