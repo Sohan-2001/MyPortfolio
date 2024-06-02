@@ -1,14 +1,15 @@
-var a=0;
-var b='a boy of fancies';
-var speed=100;
-window.onload=function typeWriter()
-{
-if(a<b.length){
-  document.getElementById("typing").innerHTML+=b.charAt(a);
-  a++;
-  setTimeout(typeWriter,speed);
-}
-}
+document.addEventListener('DOMContentLoaded', function() {
+  const navLinks = document.querySelectorAll('.nav-link');
+
+  navLinks.forEach(link => {
+      link.addEventListener('click', function() {
+          // Remove 'clicked' class from all links
+          navLinks.forEach(link => link.classList.remove('clicked'));
+          // Add 'clicked' class to the clicked link
+          this.classList.add('clicked');
+      });
+  });
+});
 
 var today = new Date();
 var time = today.getHours();
@@ -31,17 +32,49 @@ else{
 
 document.onreadystatechange = function () {
   if (document.readyState !== "complete") {
-      document.querySelector(
-          "body").style.visibility = "hidden";
-      document.querySelector(
-          "#loader").style.visibility = "visible";
+      document.querySelector("body").style.visibility = "hidden";
+      document.querySelector("#loader").style.visibility = "visible";
   } else {
-      document.querySelector(
-          "#loader").style.display = "none";
-      document.querySelector(
-          "body").style.visibility = "visible";
+      setTimeout(function() {
+          document.querySelector("#loader").style.display = "none";
+          document.querySelector("body").style.visibility = "visible";
+      }, 5000); // Wait for 5 seconds
   }
 };
+
+
+document.onreadystatechange = function () {
+  if (document.readyState !== "complete") {
+      document.querySelector("body").style.visibility = "hidden";
+      document.querySelector("#loader").style.visibility = "visible";
+  } else {
+      setTimeout(function() {
+          document.querySelector("#loader").style.display = "none";
+          document.querySelector("body").style.visibility = "visible";
+      }, 5000); // Wait for 5 seconds
+  }
+};
+
+document.addEventListener("DOMContentLoaded", function() {
+  const textElement = document.getElementById("text");
+  const cursorElement = document.getElementById("cursor");
+  const textToType = "</I Believe In Works Rather Than Words>";
+  const typingSpeed = 100; // Speed in milliseconds
+
+  let charIndex = 0;
+
+  function typeCharacter() {
+      if (charIndex < textToType.length) {
+          textElement.textContent += textToType.charAt(charIndex);
+          charIndex++;
+          setTimeout(typeCharacter, typingSpeed);
+      } else {
+          cursorElement.style.display = 'none'; // Hide cursor when done
+      }
+  }
+
+  typeCharacter();
+});
 
 
 var header = document.getElementById("carousel");
@@ -68,5 +101,4 @@ var x = document.getElementById("myAudio");
 function playAudio() { 
   x.play(); 
 }
-
 
