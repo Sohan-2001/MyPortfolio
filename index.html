@@ -2,56 +2,7 @@
 <html lang="en">
   <head>
 
-   
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="module">
-    // Import the functions you need from the SDKs you need
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js";
-    import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-database.js";
-
-    // Your web app's Firebase configuration
-    const firebaseConfig = {
-      apiKey: "AIzaSyAILSE3R6WVUZ3-O4res4KQwbGC40BDGfQ",
-      authDomain: "portfolio-aee19.firebaseapp.com",
-      databaseURL: "https://portfolio-aee19-default-rtdb.asia-southeast1.firebasedatabase.app",
-      projectId: "portfolio-aee19",
-      storageBucket: "portfolio-aee19.appspot.com",
-      messagingSenderId: "525771955288",
-      appId: "1:525771955288:web:24f1fe2b6f8b1db7ab7e2d",
-      measurementId: "G-87NRFCY9WT"
-    };
-
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const database = getDatabase(app);
-
-    // Declare clientIpAddress as a global variable
-    var clientIpAddress = 'Error'; // Default value in case IP retrieval fails
-    const deviceName = navigator.userAgent;
-
-    // Function to write the IP address to Firebase
-    function writeVisit() {
-      const now = new Date();
-      set(ref(database, 'visits/' + now), {
-        visited: clientIpAddress,
-        device: deviceName
-      }).then(() => {
-        console.log('Write succeeded!');
-      }).catch((error) => {
-        console.error('Write failed: ', error);
-      });
-    }
-
-    // Get the IP address and write to Firebase
-    $(document).ready(() => {
-      $.getJSON("https://ipinfo.io", function(response) {
-        clientIpAddress = response.ip; // Set the IP address to the global variable
-        writeVisit(); // Call writeVisit after the IP address is retrieved
-      }, "jsonp");
-    });
-
-
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     
   </script>
    <meta property="og:site_name" content="sohankarfa" />
@@ -117,7 +68,7 @@
     <title>Sohan Karfa</title>
     
  
-  <body style="overflow-x: hidden; margin-left: 0px; margin-right: 0px;">
+  <body style="overflow-x: hidden; margin-left: 0px; margin-right: 0px; ">
     <div id="loader" style="width: 90vw;" >
       <div id="typewriter">
         <span id="text"></span>
@@ -129,7 +80,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary" data-bs-theme="dark">
   <div class="container-fluid" >
-    <a class="navbar-brand" >@</a>
+    <button class="navbar-brand btn" id="page_start" >@</button>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -145,16 +96,30 @@
           <a class="nav-link" class="btn" href="#Ski">Skills</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" class="btn" href="#Cert">Certificates</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link"  class="btn" href="#Pro">Projects</a>
         </li>
         <li class="nav-item">
           <a class="nav-link"  class="btn" href="#Ach">Achievements</a>
         </li>
         <li class="nav-item">
+          <div class="dropdown">
+            <button class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Online Platforms
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="https://leetcode.com/u/SohanKarfa/" target="_blank">LeetCode</a></li>
+              <li><a class="dropdown-item" href="https://www.hackerrank.com/profile/sohan100karfa" target="_blank">HackerRank</a></li>
+              <li><a class="dropdown-item" href="https://github.com/Sohan-2001" target="_blank">GitHub</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" class="btn" href="#Con">Contacts</a>
         </li>
       </div>
-      
     </div>
   </div>
 </nav>
@@ -162,15 +127,14 @@
 
 <div class="row" id="Home">
     <div class="col-3">
-      <img src="image.png" 
+      <img src="file.png" 
       style="width: 85%; " >
     </div>
     <div class="col-3">
       <div id="typing" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:calc(20px + 3vw); position: relative; top:3vw; text-align: center;">Sohan Karfa</div>
       <div style="display: inline-block; position: relative; top: 6vw; text-align: center;  color: rgb(73, 123, 124); font-weight: 1px; font-size:calc(12px+1.5vw); font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; ">
         <a >"<p id="Time"; style="display: inline-block;"></p><br>I am Sohan Karfa. I am from Tarakeswar, Hooghly, West Bengal, India, Asia, Earth, Milky Way, Cosmos. 
-          I believe in works rather than words. I have few hobbies like writing diary, photography, chess. I am a bad leader as I don't trust others for my
-           task completion, but I am a good team member as I complete my own task quickly.
+          I believe in works rather than words. I have few hobbies like writing diary, photography, chess. 
           "</a>
       </div> 
       <div style="position: relative; margin-bottom: 80px; " >
@@ -780,7 +744,100 @@ src="6.png"  class="img-fluid rounded-start"
   </div>
  
 </div>
+  
+<br><br>
 <!--Carousel-->
+
+<!--Certificates-->
+<div id="Cert" class="text-center" style="justify-content: center;  border-color: black; margin-right: 10px; margin-left: 10px; ">
+  <h2  id="Pro"  style="  text-align: center;   color:rgb(46, 42, 42);  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+    My Certificates</h2>
+  </div>
+
+  <div style="display: flex; border-radius: 10px; width: 100%; justify-content: center;">
+    <div class="card" style="width: 95%; ">
+      <div class="card">
+        <div class="card-header">
+          Problem Solving
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Problem Solving (Intermediate) - by HackerRank</h5>
+          <a href="https://www.hackerrank.com/certificates/f5e6c88ea7c2" target="_blank" class="btn btn-secondary"  style="background-color: rgba(58, 66, 34, 0.852); color: white;">Verify</a>
+          <a id="viewHackerRank" class="btn btn-secondary" style="background-color: rgba(48, 28, 46, 0.825); color: white;">View</a>
+           <!-- Modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="imageModalLabel">@MASK View</h5>
+                  <button type="button" class="close" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                  <img id="certificateImage" src="hackerrrank.png" alt="HackerRank Certificate" class="img-fluid">
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script>
+      document.getElementById('viewHackerRank').addEventListener('click', function() {
+          document.getElementById('certificateImage').src = 'hackerrrank.png';
+          $('#imageModal').modal('show');
+      });
+
+      // Add event listener to the close button
+      document.querySelector('.close').addEventListener('click', function() {
+          $('#imageModal').modal('hide');
+      });
+  </script>
+        </div>
+      </div>
+      <br>
+      <div class="card">
+        <div class="card-header">
+          Object Oriented Programming
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Object Oriented Programming Using Python – by CodeTantra</h5>
+          <a href="https://lpu.codetantra.com/cert/certificate.jsp?certId=CT487-tDntl2f-cj4" target="_blank" class="btn btn-secondary"  style="background-color: rgba(58, 66, 34, 0.852); color: white;">Verify</a>
+          <a id="viewCodeTantra" class="btn btn-secondary" style="background-color: rgba(48, 28, 46, 0.825); color: white;">View</a>
+          <!-- Modal -->
+  <script>
+      document.getElementById('viewCodeTantra').addEventListener('click', function() {
+          document.getElementById('certificateImage').src = 'CodeTantra.png';
+          $('#imageModal').modal('show');
+      });
+  </script>
+        </div>
+      </div>
+      <br>
+      <div class="card">
+        <div class="card-header">
+          Software Development
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Software Development Trainee - by amcat</h5>
+          <a href="https://www.myamcat.com/certificate/19655379/software-development-trainee/166" target="_blank" class="btn btn-secondary"  style="background-color: rgba(58, 66, 34, 0.852); color: white;">Verify</a>
+          <a id="viewAmcat" class="btn btn-secondary" style="background-color: rgba(48, 28, 46, 0.825); color: white;">View</a>
+          <script>
+            document.getElementById('viewAmcat').addEventListener('click', function() {
+                document.getElementById('certificateImage').src = 'amcat.png';
+                $('#imageModal').modal('show');
+            });
+        </script>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+<!--/Certificates-->
 
   
 <br><br>
@@ -894,6 +951,25 @@ to visit the github pages). From there I picked up some of the intersting ones a
   <div class="card mb-3 text-start" style="width: 90vw; border: 1px solid #ddd; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
     <div class="row g-0">
       <div class="col-md-4">
+        <img src="greeting_card.png" class="img-fluid rounded-start" alt="..." style="height: 30vh; border-top-left-radius: 10px; border-bottom-left-radius: 10px;">
+      </div>
+      <div class="col-md-8" style="display: flex; align-items: center; padding: 20px;">
+        <div class="card-body text-start">
+          <h1 class="card-title" style="font-size: 2em; color: #2c3e50;">AIR: 224</h1><br/>
+          <h6 class="card-text" style="font-size: 1.2em; color: #7f8c8d;">
+            Name: CodeRush October '23<br/><br/>
+            Organizer: Newton School
+          </h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="achv1" class="text-center" style="display: flex; justify-content: center; border-color: black; margin-top: 20px;">
+  <div class="card mb-3 text-start" style="width: 90vw; border: 1px solid #ddd; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+    <div class="row g-0">
+      <div class="col-md-4">
         <img src="achv1.png" class="img-fluid rounded-start" alt="..." style="height: 30vh; border-top-left-radius: 10px; border-bottom-left-radius: 10px;">
       </div>
       <div class="col-md-8" style="display: flex; align-items: center; padding: 20px;">
@@ -943,6 +1019,8 @@ to visit the github pages). From there I picked up some of the intersting ones a
       <div class="navbar-nav">
         <a style="color:rgb(214, 223, 223);" class="nav-link btn  btn-secondary" aria-current="page" onclick="window.open('mailto:sohan100karfa@gmail.com')">Mail</a>
         <a style="color: rgb(214, 223, 223);" class="nav-link btn btn-secondary" onclick="window.open(' https://www.linkedin.com/in/sohan-karfa-72819521b/')">LinkedIn</a>
+        
+        
       </div>
     </div>
   </div>
