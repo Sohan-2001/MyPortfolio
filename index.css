@@ -1,3 +1,31 @@
+html, body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x:hidden;
+  margin: 0;
+  position: fixed;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+
+[contenteditable="true"] {
+  display: inline-block;
+}
+
+
+html {
+  overflow:auto;
+}
+::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+
+
 .navbar-nav {
   list-style-type: none;
   padding: 0;
